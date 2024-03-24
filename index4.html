@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+      
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: slategray; opacity: 0.8;">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info" style="color: black;font-size: larger;font-weight: 500; background-color: slategray; border-color: darkgray;">
+                        <span>Sreevani Patil</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="nav nav-tabs ml-auto" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="resume-tab" data-toggle="tab" href="#resume" role="tab" aria-controls="resume" aria-selected="false">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="project-tab" data-toggle="tab" href="#project" role="tab" aria-controls="project" aria-selected="false">Project</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="research-tab" data-toggle="tab" href="#research" role="tab" aria-controls="research" aria-selected="false">Skills & Research</a>
+                        </li>
+                       
+                      </ul>
+                    </div>  
+                </div>
+            </nav>
+            
+            <div class="tab-content" id="myTabContent" style="opacity: 0.85;">
+              <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                  <div class="content-box">
+                    <div class="left-section">
+                        <div style="color: black;">
+                            <h3>An AI researcher and a Full-Stack Automation developer 👩‍💻 coding since 2010 🚀</h3>
+                            <p>🔭 Pursuing a Master's in Data Science at the University of Colorado, Boulder.</p>
+                            <p>🌱 Currently exploring and working on LLMs and recent developments in AI models.</p>
+                            <p>❓ Ask me about anything related to  AI/Data Science related technologies or Automation or Full-stack.</p>
+                            <p>💻 My Blog in progress: <a style="color: blue;" href="https://sites.google.com/colorado.edu/avinya-ai/home" target="_blank">https://sites.google.com/colorado.edu/avinya-ai/home</a></p>
+                          <hr/>
+                          <div class="contact-info">
+                            <h2>Get in Touch</h2>
+                            <p>I'm always open to collaboration, discussion, and sharing ideas. Whether you're interested in working together on a project, have questions about AI, or just want to connect, feel free to reach out to me via email or LinkedIn.</p>
+                          </div>
+                          <p style="font-size: 20px ;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Let's harness the power of AI to shape a better future together! <span class="emoji">🚀✨</span></p>
+
+                        </div>
+                    </div> 
+                    <div class="right-section">
+                        <div class="profile-card">
+                            <img src="./mypic.jpg" alt="Profile Image">
+                            <h2>Data Scientist</h2>
+                            <p><strong>Roles:</strong> AI Researcher, Full-Stack Automation Developer</p>
+                            <p><strong></strong> <a href="your_linkedin_profile" target="_blank">LinkedIn</a></p>
+                            <p><strong></strong> <a href="your_linkedin_profile" target="_blank">GitHub</a></p>
+                            <p><strong></strong><a href="mailto:sreevanipatil95@gmail.com">Gmail</a></p>
+                        </div>
+                        
+                    </div>
+                                    
+              </div>
+              </div>
+                <!-- END OF ABOUT SECTION -->
+                <div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="resume-tab">
+                  <embed src="./SreevaniBP_Resume.pdf#zoom=160" width="100%" height="600px" type="application/pdf"/>
+                </div>
+                  
+                  <!-- END OF RESUME SECTION -->
+              <div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
+                 <div class="blog-wrapper">
+                  <div class="blog-card">
+                    <div class="card-img">
+                      <img src="https://www.monsenso.com/wp-content/uploads/2016/08/Untitled-design-1080x630.png" alt="Emotion Analyzer">
+
+                    </div>
+
+                     <div class="card-text"><h3>Emotion Analyzer</h3><p>Speech Emotion Recognition makes use of the power of in-person customer service encounters, to transform this process.</p></div>
+                    <div class="read-more"><a href="https://avinya9597.github.io/Emotion-Analyzer/index.html">Read More</a></div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="card-img">                    
+                      <img src="https://images.contentstack.io/v3/assets/blt28ff6c4a2cf43126/bltc18cc9a909f59a1c/642aac4fa7c294850c3f71e4/Loggly_-_tab7_image_en-us.png" alt="Log Monitoring">
+
+                    </div>
+                    <div class="card-text"><h3>Log Monitoring</h3><p>Real-time log monitoring system aims to improve system reliability, optimize performance, and enhance overall operational efficiency.</p></div>
+                    <div class="read-more"><a href="https://github.com/avinya9597/Real_Time_ServerLogs_Monitoring">Read More</a></div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="card-img"><img src="https://plantifullybasedblog.com/wp-content/uploads/2021/07/1-1.jpg" alt="My Recipe">
+                    </div>
+                    <div class="card-text"><h3>My Recipe</h3><p>Intuitive interface where they can input their dietary preferences, available ingredients, dietary restrictions, and receive customized recipe suggestions. </p></div>
+                    <div class="read-more"><a href="https://github.com/avinya9597/MyRecipe-using-LangChain/">Read More</a></div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="card-img">
+                      <img src="https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2012/04/text-mining-data-mining.png" alt="Text Mining">
+
+                    </div>
+                    <div class="card-text"><h3>Text Mining</h3><p>text mining techniques using the News API, CountVectorizer, and TF-IDF. The aim is to extract insights from news articles using these text processing methods.</p></div>
+                    <div class="read-more"><a href="https://github.com/avinya9597/TextMining_NewsData">Read More</a></div>
+                  </div>
+                </div>
+              </div>  
+              
+              <!-- END OF PROJECT SECTION -->
+               
+              <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-tab">
+                <div class="in_container">
+                <!-- Research content --> <h2> Skillset</h2><br/>
+                    <table>
+                      <tr>
+                        <th>Tools</th>
+                        <th>Frontend</th>
+                        <th>Backend</th>
+                        <th>Languages & Libraries</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="https://skillicons.dev">
+                            <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,aws,gcp,azure,grafana,anaconda&perline=4" />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="https://skillicons.dev">
+                            <img src="https://skillicons.dev/icons?i=html,css,scss,js,react,bootstrap,npm,redux&perline=4" />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="https://skillicons.dev">
+                            <img src="https://skillicons.dev/icons?i=mysql,sqlite,postgres,django,flask,ansible,terraform,fastapi&perline=4" />
+                          </a>
+                        </td>
+                      
+                        <td>
+                          <a href="https://skillicons.dev">
+                            <img src="https://skillicons.dev/icons?i=py,r,linux,pytorch,tensorflow,opencv&perline=4" />
+                          </a>
+                        </td>
+                      </tr>
+                    </table></div>
+                    <hr/>
+                      <div class="in_container">
+                        <h2>Interests</h2>
+                        <p><strong>Research:</strong> I'm passionate about pushing the boundaries of AI through cutting-edge research. Whether it's exploring new algorithms, conducting experiments, or publishing papers, I'm always eager to contribute to the advancement of the field.</p>
+                        <p><strong>Education:</strong> I'm a firm believer in the importance of education and knowledge sharing. I enjoy mentoring aspiring AI enthusiasts, teaching workshops, and delivering talks on various AI topics to inspire the next generation of AI scientists.</p>
+                        <p><strong>Real-World Applications:</strong> I'm driven by the opportunity to apply AI techniques to solve real-world problems and make a positive impact on society. Whether it's healthcare, finance, transportation, or any other domain, I'm always looking for opportunities to leverage AI for the greater good.</p>
+  
+                      </div>
+                   </div>
+                    <!-- END OF RESEARCH SECTION -->
+                  
+                  
+                  </div>
+                  <br/>
+                <!-- END OF TAB CONTENT -->  
+                <center>
+                <p style="color: whitesmoke;">Created by Sreevani Patil <br/>
+                &copy 2024. All rights reserved.</p>
+            </center>                
+    </div>
+    <!-- END OF CONTENT -->
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+   
+</body>
+
+</html>
