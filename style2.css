@@ -143,7 +143,8 @@ height: 80px;
     padding: 20px;
   }
 .profile-card {
-    background-color: rgb(234, 231, 231);
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgb(226, 246, 247) 0%, rgba(69,167,181,1) 92%, rgb(86, 182, 211) 100%);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -177,11 +178,6 @@ height: 80px;
 
 
   /* project content */
-
-
-
-  @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto|Slabo+27px);
-@import 'bourbon';
 
 
 .blog-wrapper{
@@ -274,8 +270,8 @@ height: 80px;
 }
 
 .in_container {
-    padding: 20px;
-    background-color: aliceblue;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1%;
+    background-color: #f0f0f0; /* Light gray */
+    border-radius: 2vw; /* or use ems */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted shadow values */
 }
